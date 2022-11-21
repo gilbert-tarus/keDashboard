@@ -1,0 +1,42 @@
+---
+title: "Nairobi Data"
+author: "Gilbert Tarus"
+date: "`r Sys.Date()`"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, warning = FALSE, message = FALSE, comment = "")
+```
+
+```{r}
+library(plotly)
+library(tidyverse)
+library(skimr)
+library(naniar)
+library(janitor)
+```
+
+
+```{r}
+train <- read_csv("data/train.csv")
+glimpse(train)
+```
+
+```{r}
+train %>% skim()
+```
+
+```{r}
+train <- train %>% clean_names() %>% impute_mean_all() %>% mutate_if(is_character, as_factor)
+train %>% skim()
+```
+
+```{r}
+p1 <- train %>% 
+ ggplot(aes(x = placement_time, y = temperature))+
+ geom_area()+
+ geom_line()
+ggplotly(p1)
+```
+
