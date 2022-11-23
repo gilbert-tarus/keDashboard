@@ -1,0 +1,13 @@
+name: keDashboard
+title: keDashboard
+username:
+account: tgtarus
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 7698279
+bundleId: 6540832
+url: https://tgtarus.shinyapps.io/keDashboard/
+when: 1669069811.07692
+lastSyncTime: 1669069811.07692
+asMultiple: FALSE
+asStatic: FALSE
