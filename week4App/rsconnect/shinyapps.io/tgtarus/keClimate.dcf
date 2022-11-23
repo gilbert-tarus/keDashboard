@@ -1,0 +1,13 @@
+name: keClimate
+title: keClimate
+username:
+account: tgtarus
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 7715480
+bundleId: 6548191
+url: https://tgtarus.shinyapps.io/keClimate/
+when: 1669230312.28334
+lastSyncTime: 1669230312.28334
+asMultiple: FALSE
+asStatic: FALSE
